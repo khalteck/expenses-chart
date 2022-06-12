@@ -892,5 +892,5 @@ video {
 .hideDetail {
   display: none;
 }
-.attribution { font-size: 11px; position: absolute; left: 50%; top: 90%; transform: translateX(-50%);}
+.attribution { font-size: 11px; margin-top: 20px; margin-bottom: 20px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
