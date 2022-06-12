@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Frontend Mentor | Expenses chart component</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-[#f8e9dd] font-dm w-[100vw] h-[100vh] flex items-center py-[20px]">
+        <section class="w-[370px] m-auto">
+            <div class="w-full bg-[#ec775f] flex justify-between px-[25px] py-[20px] rounded-2xl">
+                <div class="w-[30%] text-white text-[13px]">
+                    <p class="text-white font-[100] text-gray-100 mb-[-15px]">My balance</p><br>
+                    <h1 class="text-[23px] font-[500]">$921.48</h1>
+                </div>
+                <img src="logo.svg" class="w-[60px] h-auto">
+            </div>
+            <div class="w-full p-[25px] bg-white mt-[18px] rounded-2xl">
+                <h1 class="text-[20px] font-[600]">Spending - Last 7 days</h1>
+                <div class="w-[320px] mb-[20px] mt-[5px] bg-white text-gray-100 font-[100] flex justify-between items-baseline absolute">
+                    <div id="detail1" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[56px] left-[-5px] rounded-[3px]">$17.45</div>
+                    <div id="detail2" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[31px] left-[43px] rounded-[3px]">$34.91</div>
+                    <div id="detail3" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[-3px] left-[90px] rounded-[3px]">$52.36</div>
+                    <div id="detail4" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[37px] left-[137px] rounded-[3px]">$31.07</div>
+                    <div id="detail5" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[52px] left-[185px] rounded-[3px]">$23.39</div>
+                    <div id="detail6" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[22px] left-[232px] rounded-[3px]">$43.28</div>
+                    <div id="detail7" class="hideDetail p-[5px] bg-[#382314] text-white text-[12px] text-center relative top-[48px] left-[280px] rounded-[3px]">$25.48</div>
+                </div>
+                <div class="w-full h-[100px] mt-[35px] bg-white flex justify-between items-baseline">
+                    <div id="1st" class="w-[11%] h-[40%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="2nd" class="w-[11%] h-[65%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="3rd" class="w-[11%] h-[100%] bg-[#76b5bc] hover:bg-cyan-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="4th" class="w-[11%] h-[60%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="5th" class="w-[11%] h-[45%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="6th" class="w-[11%] h-[75%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                    <div id="7th" class="w-[11%] h-[50%] bg-[#ec775f] hover:bg-softred-rgba cursor-pointer rounded-[5px]"></div>
+                </div>
+                <div class="w-full mb-[20px] mt-[5px] bg-white text-gray-100 font-[500] flex justify-between items-baseline">
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">mon</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">tue</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">wed</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">thu</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">fri</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">sat</div>
+                    <div class="w-[11%] bg-white text-gray-400 text-[12px] text-center">sun</div>
+                </div>
+                <div class="w-full h-[2px] bg-gray-200"></div>
+                <div class="w-full flex justify-between items-center mt-[20px]">
+                    <div class="w-[40%] text-black">
+                        <p class=" font-[100] text-gray-400 font-[500] text-[13px]">Total this month</p>
+                        <h1 class="font-[600] text-[30px]">$478.33</h1>
+                    </div>
+                    <div class="w-[40%] text-right">
+                        <p class="font-[700] text-[12px]">+2.4%</p>
+                        <p class=" font-[100] text-gray-400 font-[500] text-[13px]">From last month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://khalteck.github.io/New-portfolio/">Khalid Oyeneye</a>.
+            </div>
+        </section>
+        <script src="/dist/script.js" async defer></script>
+    </body>
+</html>
